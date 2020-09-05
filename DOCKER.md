@@ -1,8 +1,9 @@
 <div align="center">
     <img src="https://avatars0.githubusercontent.com/u/5429470?s=200&v=4" width="200" >
-</div>
 
 # [DOCKER](https://github.com/docker)
+
+</div>
 
 ## [Instalação no Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-pt)
 

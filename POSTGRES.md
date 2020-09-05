@@ -1,8 +1,9 @@
 <div align="center">
     <img src="https://avatars0.githubusercontent.com/u/177543?s=200&v=4" width="200px">
-</div>
 
 # [POSTGRES](https://github.com/postgres)
+
+</div>
 
 ## Instalação no Ubuntu
 
