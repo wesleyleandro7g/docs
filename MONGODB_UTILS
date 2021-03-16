@@ -1,0 +1,36 @@
+### Acessar bases de dados
+localhost:27017
+	>>> acessar o compass
+mongo
+	>>> acessar o shell de comando
+	
+### Gerenciar usuários
+db.getUsers()
+	>>> lista todos os usuários
+	
+db.createUser({user: "userTeste", pwd: "123", roles:[{role: "readWrite", db: "db_teste"}]})
+	>>> cria um novo usuário
+	
+### Trabalhar com os dados
+use nome_db
+	>>> seleciona um banco de dados
+
+db.nome_da_collection.find()
+	>>> lista todos os dados da collection
+	
+db.nome_da_collection.find().pretty()
+	>>> lista todos os dados da collection formato JSON
+	
+db.nome_da_collection.find({"campo": "value"}).pretty()
+	>>> realiza busca específica
+	
+db.nome_da_collection.find().count()
+	>>> retorna o número de registros existentes na collection
+	
+db.nome_da_collection.find().sort({"campo": "1"})
+	>>> retorna os registros existentes na collection em ordem
+	>>>> 1 crescente
+	>>>> -1 decrencente
+	
+
+

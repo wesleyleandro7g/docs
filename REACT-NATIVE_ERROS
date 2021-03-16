@@ -1,0 +1,12 @@
+Ao tentar rodar um app
+	- Error: spawnSync ./gradlew EACCES
+	- Soluction: run the following command in the terminal to make the gradlew folder executable
+		*chmod 755 android/gradlew
+		
+Erro de porta sendo utilizada por outro processo (NodeJS)
+	- Error: listen EADDRINUSE: address already in use
+	- Soluction: Rode o comando no terminal 
+		*sudo lsof -i :3333
+		*kill -9 PID
+		-PID é o id do processo que está ocupando a porta
+		

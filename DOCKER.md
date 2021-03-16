@@ -5,7 +5,27 @@
 
 </div>
 
-## [Instalação no Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-pt)
+[Tutorial de intslação no Ubuntu (video)](https://www.youtube.com/watch?v=zJ6WbK9zFpI&feature=emb_rel_pause)
+
+## [Instalação no Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+
+Pirmeiro remova qualquer outra versão do docker que já esteja instalada
+
+    sudo apt-get remove docker docker-engine docker.io containerd runc
+
+Faça o download do script de instalação
+
+    curl -fsSL https://get.docker.com -o get-docker.sh
+
+Agora execute o script
+
+    sudo sh get-docker.sh
+
+Certifique-se de que tenha instalado executando o comando
+
+    sudo docker version
+
+## [Outro método de Instalação no Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-pt)
 
 Primeiro, atualize sua lista existente de pacotes:
 
@@ -87,3 +107,51 @@ Se você precisar adicionar um usuário ao grupo docker com o qual você não es
 Agora basta digitar seu usuário e senha uma única vez
 
     su - username
+
+---
+
+## Comandos Docker
+
+Executar a instancia de uma imagem, ou seja iniciar um container
+
+    docker run image-container
+
+Listar todos os containers que estão sendo executados na máquina
+
+    docker ps
+
+Listar todos os containers existentes na máquina
+
+    docker ps -a
+
+Parar a execução de container
+
+    docker stop container-name
+
+Remover um container
+
+    docker rm container-id
+
+Listar todas imagens presentes na máquina
+
+    docker images
+
+Remover uma imagem (para remover uma imagem, todos os containers que dependem dela devem ser parados antes)
+
+    docker rmi image-container
+
+Executar um container por um tempo específico (o parametro _sleep_ recebe o tempo em segundos)
+
+    docker run container-name sleep 60
+
+Executar um comando dentro de um container que está em execução
+
+    docker exec container-name cat /directory
+
+Excecutar um container em modo de teste (o container será executado em segundo plano)
+
+    docker run -D image-name
+
+Retornar há um container específico
+
+    docker attach container-id
