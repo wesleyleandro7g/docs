@@ -34,15 +34,11 @@ Acessar o pg pelo terminal
 
 Acessar pg como adm
 
-    psql -d postgres -U postgres
-
-Ou
-
     psql -U postgres
 
 Lista todos os banco de dados disponíveis
 
-    psql -l
+    \l
 
 Criar um novo banco
 
