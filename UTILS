@@ -9,3 +9,7 @@ MATAR O PROCESSO
 REATRIBUR PERMISSÕES DE PASTA
 
   sudo chown -R $USER <directory_project>
+
+CONECTAR UM REPOSITÓRIO LOCAL AO REPOSITÓRIO REMOTO DO HEROKU
+
+  heroku git:remote -a some_app_name
